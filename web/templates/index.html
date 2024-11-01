@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deeper Sensor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .navbar a:hover {
+            color: #00ff00;
+        }
+        .nav-links {
+            display: flex;
+        }
+        .nav-toggle {
+            display: none;
+            cursor: pointer;
+        }
+        .nav-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #fff;
+        }
+        .main-top {
+            background: linear-gradient(135deg, #00ff00, #000);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        .main-top h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .main-top p {
+            font-size: 1.5rem;
+        }
+        .quick-chat {
+            background: #00ff00;
+            padding: 2rem;
+            text-align: center;
+        }
+        .quick-chat input {
+            padding: 0.5rem;
+            width: 80%;
+            margin-right: 1rem;
+        }
+        .quick-chat button {
+            padding: 0.5rem 1rem;
+            background: #000;
+            color: #00ff00;
+            border: none;
+            cursor: pointer;
+        }
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .funding, .pricing {
+            background: linear-gradient(135deg, #000, #00ff00);
+        }
+        .products, .testimonies, .installation {
+            background: #000;
+        }
+        .pricing h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .pricing p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .pricing .twist {
+            font-size: 1.5rem;
+            color: #00ff00;
+        }
+        .footer {
+            background: #000;
+            padding: 2rem;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .footer a:hover {
+            color: #00ff00;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+            .nav-links a {
+                margin: 1rem 0;
+            }
+            .nav-toggle {
+                display: block;
+            }
+            .navbar.active .nav-links {
+                display: flex;
+            }
+            .quick-chat input {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Deeper Sensor</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#funding">Funding</a>
+            <a href="#products">Products</a>
+            <a href="#testimonies">Testimonies</a>
+            <a href="#installation">Installation</a>
+            <a href="#pricing">Pricing</a>
+        </div>
+    </nav>
+
+    <section class="main-top">
+        <h1>Welcome to Deeper Sensor</h1>
+        <p>Transforming the world with AI</p>
+    </section>
+
+    <section class="quick-chat">
+        <h2>Quick Chat with AI</h2>
+        <input type="text" placeholder="Ask anything...">
+        <button>Chat</button>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are on a mission to transform education, agriculture, and lifestyle with AI.</p>
+    </section>
+
+    <section id="funding" class="section funding">
+        <h2>Funding</h2>
+        <p>We are seeking funding to advance our research and make a global impact.</p>
+    </section>
+
+    <section id="products" class="section products">
+        <h2>Our Products</h2>
+        <p>Explore our range of AI-driven products designed to enhance your life.</p>
+    </section>
+
+    <section id="testimonies" class="section testimonies">
+        <h2>Testimonies</h2>
+        <p>Hear from our satisfied users and their success stories.</p>
+    </section>
+
+    <section id="installation" class="section installation">
+        <h2>Installation</h2>
+        <p>Easy steps to get started with our products.</p>
+    </section>
+
+    <section id="pricing" class="section pricing">
+        <h2>Pricing</h2>
+        <p>Our services are completely free. We depend on your donations to advance our research.</p>
+        <p class="twist">Surprise! Deeper Sensor is completely free!</p>
+    </section>
+
+    <footer class="footer">
+        <a href="#about">About</a>
+        <a href="#funding">Funding</a>
+        <a href="#products">Products</a>
+        <a href="#testimonies">Testimonies</a>
+        <a href="#installation">Installation</a>
+        <a href="#pricing">Pricing</a>
+    </footer>
+
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
