@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
 
         'deepersensor.com',
+        'www.deepersensor.com',
         'deepersensor.onrender.com',
         'localhost'
 ]
